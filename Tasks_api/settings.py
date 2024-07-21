@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qg-u)ggkh-b01-4+eroa#ljt=dz@ykn_w#z839arapy&!%0(e)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app"]
+ALLOWED_HOSTS = ["tasksapi-production-a932.up.railway.app"]
 
 
 # Application definition
@@ -85,6 +85,14 @@ DATABASES = {
         'PORT':os.environ.get('POSTGRES_PORT')
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 
 
 
