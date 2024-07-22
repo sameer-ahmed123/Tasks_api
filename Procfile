@@ -1,1 +1,1 @@
-web: gunicorn Task_api.wsgi  
+web: gunicorn Task_api.wsgi  --host 0.0.0.0 --port 8000
