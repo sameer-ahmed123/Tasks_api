@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-qg-u)ggkh-b01-4+eroa#ljt=dz@ykn_w#z839arapy&!%0(e)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0",
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0", "vercel.app"
                  "tasksapi-production-9477.up.railway.app"]
 CSRF_TRUSTED_ORIGINS = ["https://tasksapi-production-9477.up.railway.app"]
 
