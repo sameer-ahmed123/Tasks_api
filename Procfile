@@ -1,1 +1,1 @@
-web: gunicorn Task_api.wsgi  --log-file
+web: gunicorn Task_api.wsgi  --log-file --bind 0.0.0.0:8000
