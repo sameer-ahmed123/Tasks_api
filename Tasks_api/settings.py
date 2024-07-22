@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
+import dj_database_url
 import os
 from pathlib import Path
 
@@ -25,7 +26,8 @@ SECRET_KEY = 'django-insecure-qg-u)ggkh-b01-4+eroa#ljt=dz@ykn_w#z839arapy&!%0(e)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1","tasksapi-production-9477.up.railway.app"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0",
+                 "tasksapi-production-9477.up.railway.app"]
 CSRF_TRUSTED_ORIGINS = ["https://tasksapi-production-9477.up.railway.app"]
 
 # Application definition
@@ -75,7 +77,6 @@ WSGI_APPLICATION = 'Tasks_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-import dj_database_url
 DATABASES = {
     'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
@@ -97,8 +98,6 @@ DATABASES = {
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
-
 
 
 # Password validation
