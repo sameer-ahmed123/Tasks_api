@@ -30,6 +30,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ["https://tasksapi-production-9477.up.railway.app"]
+WSGI_APPLICATION = 'Tasks_api.wsgi.app'
 
 # Application definition
 
