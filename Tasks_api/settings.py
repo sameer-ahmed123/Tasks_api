@@ -28,7 +28,7 @@ DEBUG = True
 # "localhost", "127.0.0.1", "0.0.0.0", ".vercel.app"
 #  "tasksapi-production-9477.up.railway.app"
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*","localhost", "127.0.0.1", "0.0.0.0", ".vercel.app","tasksapi-production-9477.up.railway.app"]
 CSRF_TRUSTED_ORIGINS = ["https://tasksapi-production-9477.up.railway.app"]
 WSGI_APPLICATION = 'Tasks_api.wsgi.app'
 
