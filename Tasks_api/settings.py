@@ -75,16 +75,21 @@ WSGI_APPLICATION = 'Tasks_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+import dj_database_url
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_DATABASE'),
-        'USER':os.environ.get('POSTGRES_USER'),
-        'PASSWORD':os.environ.get('POSTGRES_PASSWORD'),
-        'HOST':os.environ.get('POSTGRES_HOST'),
-        'PORT':os.environ.get('POSTGRES_PORT')
-    }
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ.get('POSTGRES_DATABASE'),
+#         'USER':os.environ.get('POSTGRES_USER'),
+#         'PASSWORD':os.environ.get('POSTGRES_PASSWORD'),
+#         'HOST':os.environ.get('POSTGRES_HOST'),
+#         'PORT':os.environ.get('POSTGRES_PORT')
+#     }
+# }
 
 # DATABASES = {
 #     'default': {
