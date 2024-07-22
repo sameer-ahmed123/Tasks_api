@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-qg-u)ggkh-b01-4+eroa#ljt=dz@ykn_w#z839arapy&!%0(e)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # "localhost", "127.0.0.1", "0.0.0.0", ".vercel.app"
 #  "tasksapi-production-9477.up.railway.app"
 
